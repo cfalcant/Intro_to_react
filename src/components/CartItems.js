@@ -2,13 +2,6 @@ import React from 'react'
 import CartItem from "./CartItem"
 
 
-// const CartItems = ({items}) => {
-//   return (
-//     <div className="collection">
-//     </div>
-//   )
-// }
-
 const CartItems = (props)=> {
       let bigList = props.bigList.map(item => <CartItem key={item.id} item={item} />)
   return (
